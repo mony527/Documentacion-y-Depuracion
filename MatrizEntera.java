@@ -3,7 +3,10 @@ import java.io.PrintWriter;
 import java.util.Random;
 
 /**
- * MatrizEntera es
+ * MatrizEntera es una clase que encapsula una matriz de
+ * numeros enteros, con funcionalidades para inicializar
+ * aleatoriamente la matriz, imprimirla por pantalla o
+ * en fichero y trasponerla.
  *
  * @author Mónica
  * @author Alicia Garcia
@@ -24,8 +27,11 @@ import java.util.Random;
         private int[][] matriz;
 
     /**
-     * @param filas
-     * @param columnas
+     * Instancia una nueva matriz entera de tamaño
+     * filas por columnas
+     *
+     * @param filas el numero de filas de la matriz
+     * @param columnas el numero de columnas de la matriz
      */
         public MatrizEntera(int filas, int columnas) {
             this.COLUMNAS = columnas;
@@ -60,6 +66,13 @@ import java.util.Random;
         }
         pw.close();
     }
+
+    /**
+     * Traspone la matriz de enteros.
+     * Para ello se lleva a cabo un recorrido por la matriz
+     * y se intercambian los valores de la diagonal
+     * superior con los de la diagonal inferior.
+     */
     public void transponer() {
         for (int f=0; f<FILAS; f++)
             for (int c=0; c<COLUMNAS; c++) {
