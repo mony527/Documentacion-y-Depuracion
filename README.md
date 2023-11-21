@@ -1,1 +1,1 @@
-# Proyecto-TP
+# Documentación y depuración
