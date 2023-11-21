@@ -1,10 +1,32 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
+
+/**
+ * MatrizEntera es
+ *
+ * @author Mónica
+ * @author Alicia Garcia
+ * @version 1.0
+ */
     public class MatrizEntera {
+    /**
+     * Numero de filas de la matriz
+     */
         private final int FILAS;
+    /**
+     * Numero de columnas de la matriz
+     */
         private final int COLUMNAS;
+    /**
+     * Matriz de enteros
+     */
         private int[][] matriz;
+
+    /**
+     * @param filas
+     * @param columnas
+     */
         public MatrizEntera(int filas, int columnas) {
             this.COLUMNAS = columnas;
             this.FILAS = filas;
