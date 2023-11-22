@@ -8,7 +8,8 @@ public class Cambio {
         }
         public static void calculaCambio(double[] tipos, int i, double cambio){
             if (i<tipos.length) {
-                int monedas = 100 * (int) cambio / (int)(tipos[i]*100);
+                double monedas = 100 *  cambio / (tipos[i]*100);
+                monedas=(int) monedas; //no coge bien 1cte
                 cambio = cambio - monedas * tipos[i];
                 System.out.println("Monedas de " + tipos[i] + "€ : " + monedas);
                 calculaCambio(tipos, i+1, cambio);
