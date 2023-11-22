@@ -1,7 +1,5 @@
 import java.util.Random;
 
-public class Principal {
-    import java.util.Random;
     /**
      * Principal es una clase encargada de realizar pruebas con
      * la clase MatrizEntera.
@@ -34,4 +32,4 @@ public class Principal {
             matriz.imprimir();
         }
     }
-}
+
