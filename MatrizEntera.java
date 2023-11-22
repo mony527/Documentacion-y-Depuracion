@@ -12,7 +12,7 @@ import java.util.Random;
  * @author Alicia Garcia
  * @version 1.0
  */
-    public class MatrizEntera {
+class MatrizEntera {
     /**
      * Numero de filas de la matriz
      */
