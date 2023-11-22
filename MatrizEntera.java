@@ -104,6 +104,9 @@ class MatrizEntera {
                 int aux = matriz[f][c];
                 matriz[f][c]=matriz[c][f];
                 matriz[c][f]=aux;
+                System.out.println("Estado tras cambiar " + f + "," + c);
+                imprimir();
+                System.out.println();
             }
     }
-}
+    }
